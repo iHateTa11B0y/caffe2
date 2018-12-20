@@ -2806,7 +2806,7 @@ def _extract_stacktrace():
     result = []
     # Ignore top 3 layers of stack: this function, _CreateAndAddToSelf, and
     # whatever calls _CreateAndAddToSelf (either __getattr__ or Python)
-    frame = sys._getframe(3)
+    frame = sys._getframe()
     # We just go down the frame stack in a loop
     while frame:
         # Its important to extract information from the frame here
