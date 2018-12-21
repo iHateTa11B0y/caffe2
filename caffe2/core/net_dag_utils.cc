@@ -99,8 +99,8 @@ std::vector<OpGraphNode> pruneOpNodeGraph(
     }
   }
 
-  LOG(INFO) << "Operator graph pruning prior to chain compute took: "
-            << t.Seconds() << " secs";
+  //LOG(INFO) << "Operator graph pruning prior to chain compute took: "
+  //          << t.Seconds() << " secs";
   return pruned;
 }
 
