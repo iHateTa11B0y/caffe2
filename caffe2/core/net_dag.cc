@@ -43,9 +43,9 @@ DAGNetBase::DAGNetBase(
     operators_.push_back(node.operator_.get());
   }
 
-  LOG(INFO) << "Number of parallel execution chains "
-            << execution_chains_.size()
-            << " Number of operators = " << net_def->op_size();
+  //LOG(INFO) << "Number of parallel execution chains "
+  //          << execution_chains_.size()
+  //          << " Number of operators = " << net_def->op_size();
   // TODO: do we want to make sure that there are no loops in the
   // dependency graph?
 
